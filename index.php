@@ -23,7 +23,8 @@ $paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum l
 <body>
     <main>
         <div>
-            <p><?php echo $paragraph?></p>
+           
+            <p><?php  echo $paragraph?>  <span><?php echo strlen($paragraph) ?></span></p>
         </div>
     </main>
 </body>
