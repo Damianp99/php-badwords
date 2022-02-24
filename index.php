@@ -6,10 +6,10 @@ Una parola da censurare viene passata dall'utente tramite parametro GET.
 Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre asterischi (***) tutte le occorrenze della parola da censurare.
 */
 
-$paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum amet nemo, repellendus consequatur inventore aut cupiditate sapiente repudiandae veniam tempora maiores, voluptates velit tempore ipsum officia pariatur, illo cumque.";
+$paragraph = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum amet nemo, repellendus consequatur inventore aut cupiditate sapiente repudiandae veniam tempora maiores, voluptates velit tempore ipsum officia pariatur, illo cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum amet nemo, repellendus consequatur inventore aut cupiditate sapiente repudiandae veniam tempora maiores, voluptates velit tempore ipsum officia pariatur, illo cumque.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum laborum amet nemo, repellendus consequatur inventore aut cupiditate sapiente repudiandae veniam tempora maiores, voluptates velit tempore ipsum officia pariatur, illo cumque.";
 
 
-$word = $_GET['word'];
+$word =  $_GET ? $_GET['word'] : '';
 
 $deleted = "***";
 
